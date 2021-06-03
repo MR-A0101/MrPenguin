@@ -2,5 +2,5 @@
 
 ## <p align = "center">This is a discord bot I created!</p>
 
-## What is does?
+## What it does?
 Quacks, I am under construction
