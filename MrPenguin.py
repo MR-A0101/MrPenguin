@@ -1,17 +1,21 @@
-import discord
-import requests
+import os
 import json
 import random
-import os
+import discord
+import requests
 from discord.ext import commands
 
-client = commands.Bot(command_prefix = "quack ")
+client = discord.Client()
+client = commands.Bot(command_prefix="quack", intents = discord.Intents.default())
+client.remove_command('help')
+
 #def video_search(name):
 #request = requests.get("https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=come%20and%20go&key=[AIzaSyA6pkgWekHOwimIOKIhKgdvRNVbpOJb91k]HTTP/1.1
 #", params = name)
 
 #query = {'part': 'snippet', 'q': name}
 
+#----{ Commands }----
 @client.event
 async def on_member_join(member):
   ground = client.get_channel(847075713999175690)
